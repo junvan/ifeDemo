@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function color(){
+        var colors=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+        var c='';//这个就是之后接收颜色的字符了
+        for(var i=0;i<6;i++){//为啥是六次大家心里要有点B数
+            var n=parseInt(Math.random()*15);//随机生成一个字符的索引[0-15]
+            c+=colors[n];//这里字符就出来了
+        }
+        return '#'+c;//返回的就是十六进制的字符串了
+    }
+</script>
+</body>
+</html>
